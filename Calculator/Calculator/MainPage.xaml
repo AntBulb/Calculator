@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             x:Class="Calculator.MainPage">
+   
+    <Grid Padding="2" RowSpacing="0" ColumnSpacing="0" BackgroundColor="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Result" BackgroundColor="Black" Text="0" FontSize="60" TextColor="White" Grid.Row="0" Grid.ColumnSpan="4" 
+               HorizontalTextAlignment="End"  VerticalTextAlignment="End"/>
+        <Button x:Name="Clear" Text="AC" TextColor="Black" Grid.Row="1" Grid.Column="0" FontSize="32"
+                BackgroundColor="Gray" Clicked="Clear_Clicked"/>
+        <Button Text="+/-" TextColor="Black" Grid.Row="1" Grid.Column="1"  FontSize="32"
+                BackgroundColor="Gray" Clicked="Sign_Clicked"/>
+        <Button Text="%" TextColor="Black" Grid.Row="1" Grid.Column="2" FontSize="32"
+                BackgroundColor="Gray" Clicked="Percent_Clicked"/>
+        <Button Text="÷" TextColor="Black" Grid.Row="1" Grid.Column="3"  FontSize="32"
+                BackgroundColor="Orange" Clicked="OnOperatorClicked"/>
+
+        <Button  Text="7" TextColor="Black" Grid.Row="2" Grid.Column="0"  FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button  Text="8" TextColor="Black" Grid.Row="2" Grid.Column="1" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button Text="9" TextColor="Black" Grid.Row="2" Grid.Column="2"   FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button  Text="×" TextColor="Black" Grid.Row="2" Grid.Column="3" FontSize="32"
+                BackgroundColor="Orange" Clicked="OnOperatorClicked"/>
+
+        <Button  Text="4" TextColor="Black" Grid.Row="3" Grid.Column="0" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button  Text="5" TextColor="Black" Grid.Row="3" Grid.Column="1" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button  Text="6" TextColor="Black" Grid.Row="3" Grid.Column="2" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button Text="-" TextColor="Black" Grid.Row="3" Grid.Column="3" FontSize="32"
+                BackgroundColor="Orange" Clicked="OnOperatorClicked"/>
+
+        <Button  Text="1" TextColor="Black" Grid.Row="4" Grid.Column="0" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button  Text="2" TextColor="Black" Grid.Row="4" Grid.Column="1" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button  Text="3" TextColor="Black" Grid.Row="4" Grid.Column="2" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked"/>
+        <Button Text="+"  TextColor="Black" Grid.Row="4" Grid.Column="3" FontSize="32"
+                BackgroundColor="Orange" Clicked="OnOperatorClicked"/>
+
+        <Button Text="0"  TextColor="Black" Grid.Row="5" Grid.ColumnSpan="2" FontSize="32"
+                BackgroundColor="White" Clicked="OnNumberClicked" />
+        <Button x:Name="Dot" Text="."  TextColor="Black" Grid.Row="5" Grid.Column="2" FontSize="32"
+                BackgroundColor="White" Clicked="Dot_Clicked"/>
+        <Button Text="="  TextColor="Black" Grid.Row="5" Grid.Column="3" FontSize="32"
+                BackgroundColor="Orange" Clicked="Equals_Clicked"/>
+ 
+    </Grid>
+    
+
+</ContentPage>

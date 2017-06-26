@@ -1,0 +1,2 @@
+D:\VS projects\Calculator\Calculator\Calculator.UWP\Calculator.UWP.csproj;x86
+D:\VS projects\Calculator\Calculator\Calculator\Calculator.csproj;neutral
